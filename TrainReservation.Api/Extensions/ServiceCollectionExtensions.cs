@@ -1,4 +1,7 @@
-﻿namespace TrainReservation.Api.Extensions;
+﻿using TrainReservation.Application.Reservations;
+using TrainReservation.Application.Reservations.Contracts;
+
+namespace TrainReservation.Api.Extensions;
 
 public static class ServiceCollectionExtensions
 {
@@ -6,7 +9,7 @@ public static class ServiceCollectionExtensions
     {
         public IServiceCollection AddTrainReservation()
         {
-            //services.AddScoped<IReservationPlanner, ReservationPlanner>();
+            services.AddScoped<IReservationPlanner, ReservationPlanner>();
             return services;
 
         }

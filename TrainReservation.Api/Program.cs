@@ -1,16 +1,18 @@
 using FastEndpoints;
 using FastEndpoints.Swagger;
-using TrainReservation.Application;
+using TrainReservation.Api.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddFastEndpoints();
 builder.Services.SwaggerDocument();
-builder.Services.AddApplication();
+builder.Services.AddTrainReservation();
 
 var app = builder.Build();
 
 app.UseFastEndpoints();
-app.UseSwaggerGen(); 
+app.UseSwaggerGen();
+
+app.MapGet("/", () => Results.Redirect("/swagger"));
 
 app.Run();
