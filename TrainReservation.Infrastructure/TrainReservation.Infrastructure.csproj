@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TrainReservation.Application\TrainReservation.Application.csproj" />
+    <ProjectReference Include="..\TrainReservation.Domain\TrainReservation.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

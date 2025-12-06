@@ -1,3 +1,6 @@
 <Solution>
   <Project Path="TrainReservation.Api/TrainReservation.Api.csproj" />
+  <Project Path="TrainReservation.Application/TrainReservation.Application.csproj" />
+  <Project Path="TrainReservation.Domain/TrainReservation.Domain.csproj" />
+  <Project Path="TrainReservation.Infrastructure/TrainReservation.Infrastructure.csproj" />
 </Solution>

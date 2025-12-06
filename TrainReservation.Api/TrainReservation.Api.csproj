@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FastEndpoints" Version="7.1.1" />
+    <PackageReference Include="FastEndpoints.Swagger" Version="7.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TrainReservation.Application\TrainReservation.Application.csproj" />
+    <ProjectReference Include="..\TrainReservation.Infrastructure\TrainReservation.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
